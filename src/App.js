@@ -19,15 +19,15 @@ function App() {
       <SharedLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/tv-show" element={<TVShow />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/press-release" element={<PressRelease />} />
+          {/* <Route path="/products" element={<Products />} /> */}
+          {/* <Route path="/tv-show" element={<TVShow />} /> */}
+          {/* <Route path="/events" element={<Events />} /> */}
+          {/* <Route path="/about-us" element={<AboutUs />} /> */}
+          {/* <Route path="/contact-us" element={<ContactUs />} /> */}
+          {/* <Route path="/press-release" element={<PressRelease />} /> */}
           {/* Nested routes for "Our Programs" */}
-          <Route path="/programs/be-aware" element={<BeAware />} />
-          <Route path="/programs/clean-record" element={<CleanRecord />} />
+          {/* <Route path="/programs/be-aware" element={<BeAware />} /> */}
+          {/* <Route path="/programs/clean-record" element={<CleanRecord />} /> */}
           {/* Add other program routes... */}
         </Routes>
       </SharedLayout>
