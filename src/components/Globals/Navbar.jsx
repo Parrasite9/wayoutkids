@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useIsMobile from '../hooks/ScreenSizeUpdate';
 
+// MOBILE IMPORTS 
+import MenuIcon from '@mui/icons-material/Menu';
+import ClearIcon from '@mui/icons-material/Clear';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+
 // Define your navigation links
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -31,6 +36,8 @@ const navLinks = [
 
 function Navbar() {
   const isMobile = useIsMobile();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isExitDisplayed, setIsExitDisplayed] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
 
   const handleSubMenuToggle = (index) => {
@@ -97,20 +104,48 @@ function Navbar() {
       ))}
     </ul>
   );
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleExit = () => {
+    setIsExitDisplayed(!isExitDisplayed);
+  };
+
+  const toggleSubMenu = () => {
+    setActiveSubMenu(!activeSubMenu);
+  };
   
 
   return (
     <div className="bg-white shadow-md">
       {isMobile ? (
         // MOBILE CONTAINER 
-        <div className='nav__mobile-container p-4'>
+        <div className='nav__mobile-container p-4 flex justify-between items-center'>
           <div className='flex justify-between items-center'>
             <img src="images/logo.png" alt="Logo" className="h-8 w-auto" />
             {/* Add a mobile menu toggle button here if needed */}
           </div>
-          <nav className='mt-4'>
-            {renderNavLinks(navLinks)}
-          </nav>
+
+          {/* MOBILE MENU TOGGLE BUTTON  */}
+          {isMenuOpen ? (
+            <>
+              <ClearIcon onClick={toggleMenu} />
+              
+              <nav className='mt-4'>
+                {renderNavLinks(navLinks)}
+              </nav>
+
+              <div className='donate__button-container border-yellow-600 border-2'>
+                <button className='bg-blue-600 text-white px-8 py-2 rounded-md'>Donate</button>
+              </div>
+            </>
+          ) : (
+            <MenuIcon onClick={toggleMenu} />
+          )}
+
+
         </div>
       ) : (
         // DESKTOP CONTAINER 
