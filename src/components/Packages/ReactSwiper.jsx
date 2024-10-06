@@ -33,7 +33,6 @@ const ReactSwiper = () => {
       spaceBetween={20}            // Adjust for desired overlap
       centeredSlides={true}
       loop={true}
-      loopedSlides={slides.length} // Set to the original number of slides
       grabCursor={true}
       effect="coverflow"
       coverflowEffect={{
