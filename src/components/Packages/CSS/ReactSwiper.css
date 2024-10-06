@@ -1,0 +1,36 @@
+/* ReactSwiper.css */
+
+/* Allow overflow to show scaled slides (Y-axis only) */
+.swiper {
+    overflow: visible; /* Keep Y-axis overflow */
+  }
+  
+  /* Base styles for slides */
+  .swiper-slide {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+  }
+  
+  /* Keep the focal slide at scale(1) */
+  .swiper-slide-active {
+    transform: scale(1) !important; /* Normal size for focal slide */
+    opacity: 1;
+    transform-origin: center center !important;
+    z-index: 10;
+  }
+  
+  /* Scale down adjacent (non-focal) slides */
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    transform: scale(0.5); /* Scale down the non-focal slides */
+    opacity: 0.5;
+    z-index: 5; /* Keep them behind the active slide */
+  }
+  
+  /* Ensure parent container hides X-axis overflow */
+  .reactSwiper__container {
+    overflow-x: hidden; /* Hide X-axis overflow */
+    overflow-y: visible; /* Allow Y-axis overflow */
+    position: relative;
+  }
+  
