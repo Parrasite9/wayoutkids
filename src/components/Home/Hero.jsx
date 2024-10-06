@@ -19,7 +19,7 @@ function Hero() {
         </div>
 
         {/* // Component container in your Tailwind setup */}
-        <div className="reactSwiper__container mt-10 border border-red-500 overflow-hidden relative">
+        <div className="reactSwiper__container mt-10 overflow-hidden relative">
           <ReactSwiper />
         </div>
 

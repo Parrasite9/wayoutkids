@@ -13,10 +13,17 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // Define your slides data
 const slides = [
-  { src: 'images/image1.png', alt: 'Slide 1', border: 'border-blue-500'  , title: 'Lorum Ipsum', cta: 'Learn More' },
-  { src: 'images/image2.png', alt: 'Slide 2', border: 'border-green-500' , title: 'Lorum Ipsum', cta: 'Become a Vendor' },
-  { src: 'images/image3.png', alt: 'Slide 3', border: 'border-yellow-500', title: 'Lorum Ipsum', cta: 'Help Our Mission' },
+  { src: 'images/image1.jpg', alt: 'Slide 1', title: 'Lorum Ipsum', cta: 'Learn More' },
+  { src: 'images/image2.jpeg', alt: 'Slide 2', title: 'Lorum Ipsum', cta: 'Become a Vendor' },
+  { src: 'images/image3.jpg', alt: 'Slide 3', title: 'Lorum Ipsum', cta: 'Help Our Mission' },
+  { src: 'images/image1.jpg', alt: 'Slide 4', title: 'Lorum Ipsum4', cta: 'Learn More' },
+  { src: 'images/image2.jpeg', alt: 'Slide 5', title: 'Lorum Ipsum5', cta: 'Become a Vendor' },
+  { src: 'images/image3.jpg', alt: 'Slide 6', title: 'Lorum Ipsum6', cta: 'Help Our Mission' },
+  { src: 'images/image1.jpg', alt: 'Slide 7', title: 'Lorum Ipsum7', cta: 'Learn More' },
+  { src: 'images/image2.jpeg', alt: 'Slide 8', title: 'Lorum Ipsum8', cta: 'Become a Vendor' },
+  { src: 'images/image3.jpg', alt: 'Slide 9', title: 'Lorum Ipsum9', cta: 'Help Our Mission' },
 ];
+
 
 const ReactSwiper = () => {
   return (
@@ -38,21 +45,21 @@ const ReactSwiper = () => {
       }}
       // Autoplay settings
       autoplay={{
-        delay: 50000,                 // Delay between slides (in milliseconds)
+        delay: 5000,                 // Delay between slides (in milliseconds)
         disableOnInteraction: false, // Do not stop autoplay when user interacts
       }}
       modules={[Autoplay]} // Only keep Autoplay module
     >
       {slides.map((slide, index) => (
-        <SwiperSlide key={index} className="w-[200px] aspect-square">
+        <SwiperSlide key={index} className="w-[200px] aspect-square rounded-xl overflow-hidden shadow-xl">
           <img
             src={slide.src}
             alt={slide.alt}
-            className={`w-full h-full object-cover border-8 ${slide.border}`}
+            className={`w-full h-full object-cover`}
           />
 
       {/* Text overlay */}
-      <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-50 py-5">
+      <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-40 py-5">
         {/* Title at the top-left */}
         <h3 className="text-lg font-bold self-start align-center pl-5">{slide.title}</h3>
 
