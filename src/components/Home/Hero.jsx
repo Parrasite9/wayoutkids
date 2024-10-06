@@ -18,7 +18,7 @@ function Hero() {
           <button className='bg-blue-500 text-white mt-5 px-4 py-2 rounded-md w-1/2'>Make An Impact</button>
         </div>
 
-        // Component container in your Tailwind setup
+        {/* // Component container in your Tailwind setup */}
         <div className="reactSwiper__container mt-10 border border-red-500 overflow-hidden relative">
           <ReactSwiper />
         </div>

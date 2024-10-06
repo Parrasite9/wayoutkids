@@ -8,11 +8,14 @@ import '../Packages/CSS/ReactSwiper.css';
 // Import required modules
 import { Autoplay } from 'swiper/modules'; // Only keep Autoplay
 
+// ICONS 
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 // Define your slides data
 const slides = [
-  { src: 'images/image1.png', alt: 'Slide 1', border: 'border-blue-500'  , title: 'Lorum Ipsum', cta: 'Learn More -->' },
-  { src: 'images/image2.png', alt: 'Slide 2', border: 'border-green-500' , title: 'Lorum Ipsum', cta: 'Become a Vendor -->' },
-  { src: 'images/image3.png', alt: 'Slide 3', border: 'border-yellow-500', title: 'Lorum Ipsum', cta: 'Help Our Mission -->' },
+  { src: 'images/image1.png', alt: 'Slide 1', border: 'border-blue-500'  , title: 'Lorum Ipsum', cta: 'Learn More' },
+  { src: 'images/image2.png', alt: 'Slide 2', border: 'border-green-500' , title: 'Lorum Ipsum', cta: 'Become a Vendor' },
+  { src: 'images/image3.png', alt: 'Slide 3', border: 'border-yellow-500', title: 'Lorum Ipsum', cta: 'Help Our Mission' },
 ];
 
 const ReactSwiper = () => {
@@ -35,7 +38,7 @@ const ReactSwiper = () => {
       }}
       // Autoplay settings
       autoplay={{
-        delay: 5000,                 // Delay between slides (in milliseconds)
+        delay: 50000,                 // Delay between slides (in milliseconds)
         disableOnInteraction: false, // Do not stop autoplay when user interacts
       }}
       modules={[Autoplay]} // Only keep Autoplay module
@@ -49,10 +52,17 @@ const ReactSwiper = () => {
           />
 
       {/* Text overlay */}
-      <div className="absolute inset-0 flex flex-col items-center justify-between text-white bg-black bg-opacity-50 py-5">
-        <h3 className="text-lg font-bold self-start pl-5">{slide.title}</h3>
-        <p className="mt-2 self-end pr-5">{slide.cta}</p>
+      <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-50 py-5">
+        {/* Title at the top-left */}
+        <h3 className="text-lg font-bold self-start align-center pl-5">{slide.title}</h3>
+
+        {/* CTA Text and Arrow at the bottom-right */}
+        <div className="text__and__arrow flex w-full text-center items-center justify-end pr-5">
+          <p className="pr-2">{slide.cta}</p>
+          <ArrowForwardIosIcon fontSize='small' />
+        </div>
       </div>
+
 
         </SwiperSlide>
       ))}
