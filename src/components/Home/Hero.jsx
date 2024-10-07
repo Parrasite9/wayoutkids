@@ -30,13 +30,13 @@ function Hero() {
 
       ) : (
         <>
-        <div className="hero__text__and__cta flex flex-col md:items-center">
+        <div className="hero__text__and__cta flex flex-col md:items-center lg:translate-y-5">
             <h1 className='font-bold pt-5
                             md:text-center
                             lg:text-[50px] '>
                             Empowering Future Leaders Through Education and Advocacy
             </h1>
-            <h2 className='text-lg text-center'>Together, we can inspire and equip the next <br /> generation to create lasting change.</h2>
+            <h2 className='text-lg text-center pt-5'>Together, we can inspire and equip the next <br /> generation to create lasting change.</h2>
         </div>
 
 
@@ -71,9 +71,9 @@ function Hero() {
                     ];
                 
                 return (
-                    <div key={index} className={`${divClasses[index]} relative`}>
-                        <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-40 py-5">
+                    <div key={index} className={`${divClasses[index]} relative `}>
+                        <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover rounded-3xl" />
+                        <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-40 py-5 rounded-3xl">
                             <h3 className="text-lg font-bold pl-5">{slide.title}</h3>
                             <div className="flex items-center justify-end pr-5">
                             <p className="pr-2">{slide.cta}</p>
