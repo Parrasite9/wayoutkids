@@ -85,11 +85,11 @@ function Hero() {
                 })}
 
                 {/* Div9 (Buttons) */}
-                <div className="col-start-4 col-end-8 row-start-1 row-end-3 flex items-center justify-around">
+                <div className="col-start-3 col-end-9 row-start-1 row-end-3 flex items-center justify-around">
                     <button className="bg-blue-500 text-white px-4 py-2 rounded-md w-2/5">
                         Make An Impact
                     </button>
-                    <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-md w-2/5">
+                    <button className="flex justify-center bg-blue-500 text-white px-4 py-2 rounded-md w-2/5">
                         <PlayCircleOutlineIcon />
                         <span className="pl-2">Watch Video</span>
                     </button>
