@@ -30,13 +30,15 @@ function Hero() {
 
       ) : (
         <>
-        <div className="hero__text__and__cta flex flex-col md:items-center lg:translate-y-5">
+        <div className="hero__text__and__cta flex flex-col md:items-center pt-4">
             <h1 className='font-bold pt-5
                             md:text-center
-                            lg:text-[50px] '>
+                            lg:text-[50px]
+                            xl:text-[60px]
+                            '>
                             Empowering Future Leaders Through <br /> Education and Advocacy
             </h1>
-            <h2 className='text-lg text-center pt-5'>Together, we can inspire and equip the next <br /> generation to create lasting change.</h2>
+            <h2 className='text-lg text-center pt-5 xl:text-2xl'>Together, we can inspire and equip the next <br /> generation to create lasting change.</h2>
         </div>
 
 
@@ -51,7 +53,7 @@ function Hero() {
       ) : (
         // DESKTOP VERSION OF SLIDE CONTENT 
         <>
-            <div className="grid grid-cols-10 grid-rows-5 gap-2">
+            <div className="grid grid-cols-10 grid-rows-5 gap-2 lg:-translate-y-12">
                 {/* Div1 (Optional) */}
                 <div className="col-start-1 col-end-11 row-start-1 row-end-6">
                 {/* Optional content for Div1 */}
@@ -71,7 +73,7 @@ function Hero() {
                     ];
                 
                 return (
-                    <div key={index} className={`${divClasses[index]} relative `}>
+                    <div key={index} className={`${divClasses[index]} relative cursor-pointer `}>
                         <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover rounded-3xl" />
                         <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-40 py-5 rounded-3xl">
                             <h3 className="text-lg font-bold pl-5">{slide.title}</h3>
@@ -86,10 +88,10 @@ function Hero() {
 
                 {/* Div9 (Buttons) */}
                 <div className="col-start-3 col-end-9 row-start-1 row-end-3 flex items-center justify-around">
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded-md w-2/5">
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
                         Make An Impact
                     </button>
-                    <button className="flex justify-center bg-blue-500 text-white px-4 py-2 rounded-md w-2/5">
+                    <button className="flex justify-center bg-blue-500 text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
                         <PlayCircleOutlineIcon />
                         <span className="pl-2">Watch Video</span>
                     </button>
