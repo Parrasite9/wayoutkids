@@ -46,16 +46,15 @@ function Footer() {
   const programsLink = navLinks.find((link) => link.name === 'Programs');
 
   return (
-    <footer className="bg-gray-900 text-white py-12 mt-16">
+    <footer className="bg-darkGreen text-white py-12 mt-16">
       <div className="container mx-auto px-6">
         {isMobile ? (
           /* Mobile Layout */
           <div className="flex flex-col items-start gap-8">
             {/* Logo/Title Section */}
             <div className="w-full mb-6">
-              {/* <h4 className="text-xl font-bold mb-4">SeductiveBox</h4> */}
               <img src='/logo.png' alt="Logo" className="w-1/2 h-1/2" />
-              <p className="text-gray-400">
+              <p className="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quis architecto repudiandae illo quisquam laudantium!
               </p>
             </div>
@@ -66,7 +65,7 @@ function Footer() {
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-pink-500">
+                    <Link to={link.path} className="hover:text-sunnyYellow">
                       {link.name}
                     </Link>
                   </li>
@@ -81,7 +80,7 @@ function Footer() {
                 <ul className="space-y-2">
                   {programsLink.subLinks.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <Link to={subLink.path} className="hover:text-pink-500">
+                      <Link to={subLink.path} className="hover:text-sunnyYellow">
                         {subLink.name}
                       </Link>
                     </li>
@@ -96,7 +95,7 @@ function Footer() {
               <ul className="space-y-2">
                 {supportLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-pink-500">
+                    <Link to={link.path} className="hover:text-sunnyYellow">
                       {link.name}
                     </Link>
                   </li>
@@ -112,7 +111,7 @@ function Footer() {
                   href="https://www.facebook.com/WayOutKids/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-500"
+                  className="hover:text-blue-400"
                 >
                   <FacebookIcon />
                 </a>
@@ -128,7 +127,7 @@ function Footer() {
                   href="https://twitter.com/rodneyraccoon"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-500"
+                  className="hover:text-gray-400"
                 >
                   <XIcon />
                 </a>
@@ -150,7 +149,7 @@ function Footer() {
             <div className="w-1/5 mb-6">
               {/* <h4 className="text-xl font-bold mb-4">WayOut Kids</h4> */}
               <img src='/logo.png' alt="Logo" className="w-1/2 h-1/2" />
-              <p className="text-gray-400">
+              <p className="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea harum rem at, repellat voluptate.
               </p>
             </div>
@@ -161,7 +160,7 @@ function Footer() {
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-pink-500">
+                    <Link to={link.path} className="hover:text-sunnyYellow">
                       {link.name}
                     </Link>
                   </li>
@@ -176,7 +175,7 @@ function Footer() {
                 <ul className="space-y-2">
                   {programsLink.subLinks.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <Link to={subLink.path} className="hover:text-pink-500">
+                      <Link to={subLink.path} className="hover:text-sunnyYellow">
                         {subLink.name}
                       </Link>
                     </li>
@@ -191,7 +190,7 @@ function Footer() {
               <ul className="space-y-2">
                 {supportLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-pink-500">
+                    <Link to={link.path} className="hover:text-sunnyYellow">
                       {link.name}
                     </Link>
                   </li>
@@ -207,7 +206,7 @@ function Footer() {
                   href="https://www.facebook.com/WayOutKids/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-500"
+                  className="hover:text-blue-400"
                 >
                   <FacebookIcon />
                 </a>
@@ -223,7 +222,7 @@ function Footer() {
                   href="https://twitter.com/rodneyraccoon"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-500"
+                  className="hover:text-gray-400"
                 >
                   <XIcon />
                 </a>
@@ -241,7 +240,7 @@ function Footer() {
         )}
 
         {/* Bottom Disclaimer */}
-        <div className="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
+        <div className="text-center text-white text-sm mt-8 border-t border-sunnyYellow pt-4">
           © {getCurrentYear()} WayOut Kids. All rights reserved.
         </div>
       </div>

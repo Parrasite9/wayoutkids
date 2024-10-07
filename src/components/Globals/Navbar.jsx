@@ -181,7 +181,7 @@ function Navbar() {
 
                 </>
               ) : (
-                <MenuIcon onClick={toggleMenu} className="z-50" />
+                <MenuIcon onClick={toggleMenu} className="z-50 text-orange-400" />
               )}
             </>
           )}
