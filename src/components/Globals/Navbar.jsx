@@ -60,7 +60,7 @@ function Navbar() {
               {link.name === 'Programs' ? (
                 <span 
                   onClick={() => isMobile && link.subLinks ? handleSubMenuToggle(index) : null}
-                  className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer"
+                  className="text-white hover:text-orange-400 transition duration-300 cursor-pointer"
                 >
                   {link.name}
                 </span>
@@ -68,7 +68,7 @@ function Navbar() {
                 <Link 
                   to={link.path} 
                   onClick={() => isMobile && link.subLinks ? handleSubMenuToggle(index) : null}
-                  className="text-gray-700 hover:text-blue-600 transition duration-300"
+                  className="text-white hover:text-orange-400 transition duration-300"
                 >
                   {link.name}
                 </Link>
@@ -106,7 +106,7 @@ function Navbar() {
   
 
   return (
-    <div className="bg-white shadow-md">
+    <div className="bg-lightBlue shadow-md">
       {isMobile ? (
         <div className="nav__mobile-container p-4 flex justify-between items-center relative">
           {activeSubMenu === 'programs' ? (
@@ -119,14 +119,13 @@ function Navbar() {
               />
               
               {/* Full-screen overlay for Programs submenu */}
-              {/* Full-screen overlay for Programs submenu */}
               <nav className="fixed inset-0 bg-white flex flex-col justify-center items-center z-40">
-                <ul className="space-y-4">
+                <ul className="space-y-4 ">
                   {navLinks.find(link => link.name === 'Programs').subLinks.map((subLink, subIndex) => (
                     <li key={`${subLink.name}-${subLink.path}-${subIndex}`}>  {/* Ensure unique key */}
                       <Link 
                         to={subLink.path} 
-                        className="text-gray-700 hover:text-blue-600 text-lg"
+                        className="text-white hover:text-blue-600 text-lg"
                       >
                         {subLink.name}
                       </Link>
@@ -189,22 +188,22 @@ function Navbar() {
         </div>
       ) : (
         // DESKTOP CONTAINER 
-        <div className='nav__desktop-container mx-auto px-4 border border-red-600 border-2'>
+        <div className='nav__desktop-container mx-auto px-4'>
           <nav className="flex items-center py-4 justify-between">
             
             {/* LOGO CONTAINER  */}
-            <div className="logo__container border-blue-600 border-2 ">
+            <div className="logo__container">
               <img src="/logo.png" alt="Logo" className="h-8 w-auto h-10" />
             </div>
 
             {/* NAV LINKS CONTAINER  */}
-            <div className='navlinks__container border-green-600 border-2 flex justify-center items-center'>
+            <div className='navlinks__container flex justify-center items-center'>
               {renderNavLinks(navLinks)}
             </div>
 
             {/* DONATE BUTTON CONTAINER  */}
-            <div className='donate__button-container border-yellow-600 border-2'>
-              <button className='bg-blue-600 text-white px-8 py-2 rounded-md'>Donate</button>
+            <div className='donate__button-container'>
+              <button className='bg-brightOrange text-white px-8 py-2 rounded-md'>Donate</button>
             </div>
           </nav>
         </div>
