@@ -27,6 +27,7 @@ module.exports = {
         // BACKGROUND COLORS 
         softSkyBlue:'#E0F7FA',
         myWhite: '#f2f2f2',
+        myBlack: '#333333',
         paleYellow:'#FFF9C4',
       },
       screens: {

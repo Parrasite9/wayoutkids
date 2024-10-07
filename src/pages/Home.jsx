@@ -4,7 +4,7 @@ import { Hero, About, Education, Products, SupportMission } from '../components/
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-myWhite text-myBlack px-4 lg:px-1'>
       <Hero />
       <About />
       {/* <Education /> */}
