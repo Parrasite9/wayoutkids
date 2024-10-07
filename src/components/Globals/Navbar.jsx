@@ -188,12 +188,14 @@ function Navbar() {
         </div>
       ) : (
         // DESKTOP CONTAINER 
-        <div className='nav__desktop-container mx-auto px-4'>
+        <div className='nav__desktop-container mx-auto px-10'>
           <nav className="flex items-center py-4 justify-between">
             
             {/* LOGO CONTAINER  */}
             <div className="logo__container">
-              <img src="/logo.png" alt="Logo" className="h-8 w-auto h-10" />
+              <Link to="/">
+                <img src="/logo.png" alt="Logo" className="h-12 w-auto h-10" />
+              </Link>
             </div>
 
             {/* NAV LINKS CONTAINER  */}

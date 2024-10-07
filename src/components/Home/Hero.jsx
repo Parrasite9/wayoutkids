@@ -34,7 +34,7 @@ function Hero() {
             <h1 className='font-bold pt-5
                             md:text-center
                             lg:text-[50px] '>
-                            Empowering Future Leaders Through Education and Advocacy
+                            Empowering Future Leaders Through <br /> Education and Advocacy
             </h1>
             <h2 className='text-lg text-center pt-5'>Together, we can inspire and equip the next <br /> generation to create lasting change.</h2>
         </div>

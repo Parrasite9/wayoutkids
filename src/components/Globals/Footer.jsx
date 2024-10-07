@@ -148,7 +148,9 @@ function Footer() {
             {/* Logo/Title Section */}
             <div className="w-1/5 mb-6">
               {/* <h4 className="text-xl font-bold mb-4">WayOut Kids</h4> */}
-              <img src='/logo.png' alt="Logo" className="w-1/2 h-1/2" />
+              <Link to='/'>
+                <img src='/logo.png' alt="Logo" className="w-4/5 h-auto" />
+              </Link>
               <p className="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea harum rem at, repellat voluptate.
               </p>

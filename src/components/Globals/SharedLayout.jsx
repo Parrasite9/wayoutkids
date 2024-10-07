@@ -6,7 +6,7 @@ const SharedLayout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      <main className='px-4'>{children}</main>
+      <main className='px-4 lg:px-10'>{children}</main>
       <Footer />
     </div>
   );
