@@ -12,7 +12,7 @@ import { Autoplay } from 'swiper/modules'; // Only keep Autoplay
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // Define your slides data
-const slides = [
+export const slides = [
   { src: 'images/image1.jpg', alt: 'Slide 1', title: 'Lorum Ipsum', cta: 'Learn More' },
   { src: 'images/image2.jpeg', alt: 'Slide 2', title: 'Lorum Ipsum', cta: 'Become a Vendor' },
   { src: 'images/image3.jpg', alt: 'Slide 3', title: 'Lorum Ipsum', cta: 'Help Our Mission' },
