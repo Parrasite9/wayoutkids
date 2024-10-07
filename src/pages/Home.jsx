@@ -1,11 +1,12 @@
 // src/pages/Home.jsx
 import React from 'react';
-import { Hero, Education, Products, SupportMission } from '../components/Home';
+import { Hero, About, Education, Products, SupportMission } from '../components/Home';
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <About />
       {/* <Education /> */}
       {/* <Products /> */}
       {/* <SupportMission /> */}

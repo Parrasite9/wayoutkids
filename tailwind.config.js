@@ -12,7 +12,22 @@ module.exports = {
         brightOrange: '#D37A07', // Logo color for button
         magenta: '#E91E63',
         darkGreen: '#236313', // Footer background
-        deepBlue: '#003FFF',  // Link hover color
+        deepBlue: '#003FFF',
+
+        // Vibrant versions
+        vLightBlue: '#00AFFF', // More vivid light blue
+        vSunnyYellow: '#FFEE00', // Brighter, attention-grabbing yellow
+        vAppleGreen: '#7FFF00', // A more electric and vibrant green
+        vSoftRed: '#FF5733', // Higher saturation red with orange tones
+        vBrightOrange: '#FF8C00', // Brighter, more intense orange
+        vMagenta: '#FF1493', // More saturated and vivid magenta
+        vDarkGreen: '#28A745', // Brighter green with stronger intensity
+        vDeepBlue: '#0047FF',  // More vivid and eye-catching deep blue
+
+        // BACKGROUND COLORS 
+        softSkyBlue:'#E0F7FA',
+        myWhite: '#f2f2f2',
+        paleYellow:'#FFF9C4',
       },
       screens: {
         'sm': '640px',
