@@ -36,6 +36,11 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Lora', 'serif'],
+        body: ['Roboto', 'sans-serif'], // Define the 'font-body' custom class
+      },
     },
   },
   plugins: [],

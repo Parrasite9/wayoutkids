@@ -91,7 +91,7 @@ function Hero() {
                     <button className="bg-blue-500 text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
                         Make An Impact
                     </button>
-                    <button className="flex justify-center bg-blue-500 text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
+                    <button className="flex justify-center bg-darkGreen text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
                         <PlayCircleOutlineIcon />
                         <span className="pl-2">Watch Video</span>
                     </button>

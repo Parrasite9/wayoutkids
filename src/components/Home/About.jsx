@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="about__text__container">
             <h3 className='mt-10 text-vDeepBlue font-semibold'>About Us</h3>
-            <h2 className='font-bold text-2xl mb-8'>Growing a Community of Learners for Life.</h2>
+            <h2 className='font-bold text-darkGreen text-2xl mb-8'>Growing a Community of Learners for Life.</h2>
             <p className='mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui consequuntur saepe cumque illo fugit asperiores ipsam dolore! Culpa quidem quibusdam placeat hic, similique impedit adipisci illum laboriosam quas fugit maiores.</p>
         
             {/* TEXT AND FONT GRID  */}
