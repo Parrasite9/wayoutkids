@@ -30,6 +30,9 @@ module.exports = {
         myBlack: '#333333',
         paleYellow:'#FFF9C4',
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(56deg, rgba(242,242,242,1) 10%, rgba(255,221,187,1) 50%, rgba(242,242,242,1) 90%)',
+      },
       screens: {
         'sm': '640px',
         'md': '768px',
