@@ -13,7 +13,7 @@ function Hero() {
   const isMobile = useIsMobile();
 
   return (
-    <div className='Hero__Container'>
+    <div className='Hero__Container lg:px-8'>
       
       {/* HERO TEXT  */}
       {isMobile ? (
