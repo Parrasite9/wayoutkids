@@ -20,9 +20,11 @@ const About = () => {
             <p className='mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui consequuntur saepe cumque illo fugit asperiores ipsam dolore! Culpa quidem quibusdam placeat hic, similique impedit adipisci illum laboriosam quas fugit maiores.</p>
         
             {/* TEXT AND FONT GRID  */}
-            <div className="grid grid-cols-3 grid-rows-2 gap-0">
-                {/* Parent div that spans all rows and columns */}
-                {/* <div className="col-span-3 row-span-2 bg-gray-200">Parent div content</div> */}
+            <div className="grid grid-cols-5 grid-rows-2 gap-0">
+                {/* Div1: Parent div that spans all rows and columns */}
+                {/* <div className="col-start-1 col-end-6 row-start-1 row-end-3">
+                    Parent div content
+                </div> */}
 
                 {/* Div2: Icon placed in first row, first column */}
                 <div className="row-start-1 col-start-1 flex items-center justify-center">
@@ -31,8 +33,8 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Div3: Text placed in first row, second and third columns */}
-                <div className="row-start-1 col-start-2 col-span-2 flex items-center">
+                {/* Div3: Text placed in first row, second to fifth columns */}
+                <div className="row-start-1 col-start-2 col-end-6 flex items-center">
                     <div className="about__icon__text p-5">
                         <h2 className='font-semibold mb-2'>Flexible Classes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic accusantium iure atque neque adipisci non.</p>
@@ -46,14 +48,15 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Div5: Text placed in second row, second and third columns */}
-                <div className="row-start-2 col-start-2 col-span-2 flex items-center">
+                {/* Div5: Text placed in second row, second to fifth columns */}
+                <div className="row-start-2 col-start-2 col-end-6 flex items-center">
                     <div className="about__icon__text p-5">
-                        <h2 className='font-semibold mb-2'>Flexible Classes</h2>
+                        <h2 className='font-semibold mb-2'>Support Agent</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic accusantium iure atque neque adipisci non.</p>
                     </div>
                 </div>
             </div>
+
 
             <div className="about__button justify-center items-center">
                 <button className='bg-blue-500 text-white mt-5 px-4 py-2 rounded-md w-1/2 flex justify-center w-full'>
