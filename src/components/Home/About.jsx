@@ -99,30 +99,30 @@ const About = () => {
       ) : (
         <>
             {/* DESKTOP VIEW  */}
-            <div class="grid grid-cols-2 grid-rows-1 gap-0 bg-custom-gradient lg:px-8 lg:py-10">
+            <div className="grid grid-cols-2 grid-rows-1 gap-0 bg-custom-gradient lg:px-8 lg:py-10">
                 {/* <!-- IMAGE CONTAINER--> */}
-                <div class="col-start-1 col-end-2 row-start-1 row-end-2 flex justify-center items-center">
+                <div className="col-start-1 col-end-2 row-start-1 row-end-2 flex justify-center items-center">
                     {/* <!-- Centered Grid for Images --> */}
-                    <div class="grid lg:grid-cols-9 lg:grid-rows-6 lg:gap-2">
+                    <div className="grid lg:grid-cols-9 lg:grid-rows-6 lg:gap-2">
                         {/* <!-- Div1: Covers grid area 4 / 3 / 7 / 8 --> */}
-                        <div class="lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7">
-                            <img class="w-full h-full object-cover" src="/images/about1.jpg" alt="About Image 1" />
+                        <div className="lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7">
+                            <img className="w-full h-full object-cover" src="/images/about1.jpg" alt="About Image 1" />
                         </div>
 
                         {/* <!-- Div2: Covers grid area 2 / 2 / 4 / 5 --> */}
-                        <div class="lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-4">
-                            <img class="w-full h-full object-cover" src="/images/about2.jpeg" alt="About Image 2" />
+                        <div className="lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-4">
+                            <img className="w-full h-full object-cover" src="/images/about2.jpeg" alt="About Image 2" />
                         </div>
 
                         {/* <!-- Div3: Covers grid area 1 / 5 / 4 / 9 --> */}
-                        <div class="lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4">
-                            <img class="w-full h-full object-cover" src="/images/about3.avif" alt="About Image 3" />
+                        <div className="lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4">
+                            <img className="w-full h-full object-cover" src="/images/about3.avif" alt="About Image 3" />
                         </div>
                     </div>
                 </div>
 
                 {/* <!-- TEXT CONTAINER --> */}
-                <div class="col-start-2 col-end-3 row-start-1 row-end-2">
+                <div className="col-start-2 col-end-3 row-start-1 row-end-2">
                     {/* <!-- Content for Div2 --> */}
                     <div className="about__text__container">
                         <h3 className='mt-10 text-vDeepBlue font-semibold xl:text-xl'>About Us</h3>
