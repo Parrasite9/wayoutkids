@@ -11,7 +11,7 @@ export const eventData = [
     },
     {
         id: 2,
-        title: 'Event 1',
+        title: 'Lorem ipsum dolor sit amet consectetur.',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         time: '8:30 am',
         date: '2026-05-26',

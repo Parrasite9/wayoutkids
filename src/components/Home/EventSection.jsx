@@ -7,7 +7,7 @@ import { eventData, getNextEvent, getNextNonDuplicateEvent, formatDate } from '.
 // MUI ICONS 
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function EventSection() {
 
@@ -25,7 +25,7 @@ function EventSection() {
                 </div>
             ) : (
                 // DESKTOP VIEW 
-                <div class="grid grid-cols-2 grid-rows-1 gap-0">
+                <div class="grid grid-cols-2 grid-rows-1 gap-4">
                     {/* <!-- Div 1 --> */}
                     <div class="col-start-1 col-end-2 row-start-1 row-end-2">
                         {/* <!-- Content for Div1 --> */}
@@ -44,7 +44,7 @@ function EventSection() {
                         {/* <!-- Content for Div2 --> */}
 
                         {/* THIS IS THE PARENT DIV FOR THE EVENTS SECTION CONTAINER  */}
-                        <div className="grid grid-cols-2 grid-rows-2 gap-0">
+                        <div className="grid grid-cols-2 grid-rows-2 gap-y-4">
                             {/* Div1: Spans the entire first row */}
                             <div className="col-start-1 col-end-3 row-start-1 row-end-2 bg-gray-200">
                                 {/* Content for Div1 */}
@@ -63,53 +63,59 @@ function EventSection() {
                             </div>
 
                             {/* Div4: Second column, first row */}
-                            <div className="col-start-2 col-end-3 row-start-1 row-end-2 bg-gray-400">
+                            <div className="col-start-2 col-end-3 row-start-1 row-end-2 bg-gray-400 flex items-start justify-start text-left p-5">
                                 {/* Content for Div4 */}
                                 {nextEvent ? (
-                                    <div className="col-start-2 col-end-3 row-start-2 row-end-3 bg-gray-500">
-                                        <div className="location__and__time flex">
-                                            <div className="time flex">
+                                    <div>
+                                        <div className="location__and__time flex mb-4 pt-4">
+                                            <div className="time flex items-center">
                                                 <AccessTimeIcon />
-                                                <p>{nextEvent.time}</p>
+                                                <p className="pl-2">{nextEvent.time}</p>
                                             </div>
-                                            <div className="location flex">
+                                            <div className="location flex items-center ml-4">
                                                 <LocationOnIcon />
-                                                <p>{nextEvent.location}</p> {/* Access location safely */}
+                                                <p className="pl-2">{nextEvent.location}</p>
                                             </div>
                                         </div>
-                                        <h3>{nextEvent.title}</h3> {/* Access title safely */}
-                                        <p>{nextEvent.description}</p>
+                                        <h3 className="font-bold mb-4 text-2xl">{nextEvent.title}</h3>
+                                        <button className='border-none bg-transparent'>View More <ArrowForwardIcon /></button>
                                     </div>
                                 ) : (
                                     <div>No upcoming events</div>  // Fallback if no event is found
                                 )}
                             </div>
 
+
                             {/* Div5: Second image in the second row, first column */}
                             <div className="col-start-1 col-end-2 row-start-2 row-end-3">
                                 <img className="w-full h-full object-cover" src="/images/events/jenga.jpg" alt="Image 2" />
                             </div>
 
-                            {/* Div6: Second column, second row */}
                             {/* Only render event details if nextEvent exists */}
-                            {nextNonDuplicateEvent ? (
-                                <div className="col-start-2 col-end-3 row-start-2 row-end-3 bg-gray-500">
-                                    <div className="location__and__time flex">
-                                        <div className="time flex">
-                                            <AccessTimeIcon />
-                                            <p>{nextNonDuplicateEvent.time}</p>
+                            {/* Div6: Second column, second row */}
+                            <div className="col-start-2 col-end-3 row-start-2 row-end-3 bg-gray-500 flex items-start justify-start">
+                                <div className="bg-gray-400 w-full h-full flex items-start justify-start text-left p-5">
+                                    {nextNonDuplicateEvent ? (
+                                        <div>
+                                            <div className="location__and__time flex mb-4">
+                                                <div className="time flex items-center">
+                                                    <AccessTimeIcon />
+                                                    <p className="pl-2">{nextNonDuplicateEvent.time}</p>
+                                                </div>
+                                                <div className="location flex items-center ml-4">
+                                                    <LocationOnIcon />
+                                                    <p className="pl-2">{nextNonDuplicateEvent.location}</p>
+                                                </div>
+                                            </div>
+                                            <h3 className="font-bold mb-4 text-2xl">{nextNonDuplicateEvent.title}</h3>
+                                            <button className='border-none bg-transparent'>View More <ArrowForwardIcon /></button>
                                         </div>
-                                        <div className="location flex">
-                                            <LocationOnIcon />
-                                            <p>{nextNonDuplicateEvent.location}</p> {/* Access location safely */}
-                                        </div>
-                                    </div>
-                                    <h3>{nextNonDuplicateEvent.title}</h3> {/* Access title safely */}
-                                    <p>{nextNonDuplicateEvent.description}</p>
+                                    ) : (
+                                        <div>No upcoming events</div>  // Fallback if no event is found
+                                    )}
                                 </div>
-                            ) : (
-                                <div>No upcoming events</div>  // Fallback if no event is found
-                            )}
+                            </div>
+
 
                         </div>
 
