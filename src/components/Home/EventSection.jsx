@@ -72,7 +72,7 @@ function EventSection() {
                                 {nextEvent ? (
                                     <div className="relative bg-softOrange p-5 flex items-start justify-start text-left">
                                         {/* XYZ attached to the event */}
-                                        <div className="bg-vBrightOrange px-8 py-2 rounded-full absolute right-[-6rem] top-1/2 transform -translate-y-1/2 -rotate-90 text-md font-bold text-white">
+                                        <div className="hidden xl:block bg-vBrightOrange px-8 py-2 rounded-full absolute right-[-6rem] top-1/2 transform -translate-y-1/2 -rotate-90 text-md font-bold text-white">
                                             {nextEvent.date}
                                         </div>
 
@@ -110,6 +110,14 @@ function EventSection() {
                             <div className="col-start-2 col-end-3 row-start-2 row-end-auto bg-gray-500 flex items-start justify-start">
                                 <div className="bg-softGreen w-full h-full flex items-start justify-start text-left p-5">
                                     {nextNonDuplicateEvent ? (
+                                        <div className="relative bg-softDarkGreen p-5 flex items-start justify-start text-left">
+                                        {/* XYZ attached to the event, visible only on screens 1440px and above */}
+                                        <div className="hidden xl:block bg-vDarkGreen px-8 py-2 rounded-full absolute right-[-6rem] top-1/2 transform -translate-y-1/2 -rotate-90 text-md font-bold text-white">
+                                          {nextNonDuplicateEvent.date}
+                                        </div>
+                                      
+                                        {/* Event Data */}
+
                                         <div>
                                             <div className="location__and__time flex mb-4 pt-5 text-xs">
                                                 <div className="time flex items-center">
@@ -124,6 +132,9 @@ function EventSection() {
                                             <h3 className="font-bold mb-4 text-2xl">{nextNonDuplicateEvent.title}</h3>
                                             <button className='border-none bg-transparent cursor-pointer'>View More <ArrowForwardIcon className='text-vDarkGreen' /></button>
                                         </div>
+                                      </div>
+
+
                                     ) : (
                                         <div>No upcoming events</div>  // Fallback if no event is found
                                     )}
