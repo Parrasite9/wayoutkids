@@ -13,6 +13,8 @@ module.exports = {
         magenta: '#E91E63',
         darkGreen: '#236313', // Footer background
         deepBlue: '#003FFF',
+        softOrange: '#ffddbb',
+        softGreen: '#A9C9A4',
 
         // Vibrant versions
         vLightBlue: '#00AFFF', // More vivid light blue
