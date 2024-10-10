@@ -73,7 +73,7 @@ function EventSection() {
                                     <div className="relative bg-softOrange p-5 flex items-start justify-start text-left">
                                         {/* XYZ attached to the event */}
                                         <div className="hidden xl:block bg-vBrightOrange px-8 py-2 rounded-full absolute right-[-6rem] top-1/2 transform -translate-y-1/2 -rotate-90 text-md font-bold text-white">
-                                            {nextEvent.date}
+                                            {formatDate(nextEvent.date)}
                                         </div>
 
                                         {/* Event Data */}
@@ -113,7 +113,7 @@ function EventSection() {
                                         <div className="relative bg-softDarkGreen p-5 flex items-start justify-start text-left">
                                         {/* XYZ attached to the event, visible only on screens 1440px and above */}
                                         <div className="hidden xl:block bg-vDarkGreen px-8 py-2 rounded-full absolute right-[-6rem] top-1/2 transform -translate-y-1/2 -rotate-90 text-md font-bold text-white">
-                                          {nextNonDuplicateEvent.date}
+                                            {formatDate(nextNonDuplicateEvent.date)}
                                         </div>
                                       
                                         {/* Event Data */}
