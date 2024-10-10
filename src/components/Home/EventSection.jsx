@@ -25,20 +25,22 @@ function EventSection() {
                 </div>
             ) : (
                 // DESKTOP VIEW 
-                <div class="grid grid-cols-2 grid-rows-1 gap-4 p-8">
+                <div class="grid grid-cols-2 auto-rows-auto gap-4 p-8">
                     {/* <!-- Div 1 --> */}
-                    <div class="col-start-1 col-end-2 row-start-1 row-end-2">
+                    <div class="col-start-1 col-end-2 row-start-1 row-end-auto">
                         {/* <!-- Content for Div1 --> */}
                         <div className="title__and__linebreak">
-                            <h3 className='text-brightOrange'>Upcoming Events</h3>
+                            <h3 className='text-vBrightOrange'>Upcoming Events</h3>
                             {/* INSERT LINE BREAK  */}
                             <hr class="w-1/6 border-t-2 border-gray-400 my-4 text-left border-vDarkGreen" />
 
                         </div>
                         
-                        <h2 className='text-4xl font-bold mt-8'>Ready To Join Our Latest Upcoming <span>Events?</span></h2>
-                        <p className='text-xl mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id beatae possimus alias architecto eaque numquam nemo dolorem tempore eum unde, quia tempora corporis quis repudiandae.</p>
-                        <button className='bg-vBrightOrange text-white px-4 py-2 rounded-md mt-8'>Discover More</button>
+                        <div className="flex flex-col justify-between">
+                            <h2 className='text-4xl font-bold mt-8'>Ready To Join Our Latest Upcoming <span className='text-vBrightOrange'>Events?</span></h2>
+                            <p className='text-xl mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id beatae possimus alias architecto eaque numquam nemo dolorem tempore eum unde, quia tempora corporis quis repudiandae.</p>
+                            <button className='flex justify-center bg-vBrightOrange text-white px-4 py-3 rounded-3xl mt-8 w-2/5'>Discover More <ArrowForwardIcon className='text-white ml-2' /></button>
+                        </div>                    
                     </div>
 
                     {/* <!-- Div 2 --> */}
@@ -65,22 +67,32 @@ function EventSection() {
                             </div>
 
                             {/* Div4: Second column, first row */}
-                            <div className="col-start-2 col-end-3 row-start-1 row-end-2 bg-softOrange flex items-start justify-start text-left p-5">
+                            <div className="col-start-2 col-end-3 row-start-1 row-end-auto bg-softOrange flex items-start justify-start text-left p-5">
                                 {/* Content for Div4 */}
                                 {nextEvent ? (
-                                    <div>
-                                        <div className="location__and__time flex mb-4 pt-5 text-xs">
-                                            <div className="time flex items-center">
-                                                <AccessTimeIcon className='text-vBrightOrange' />
-                                                <p className="pl-2">{nextEvent.time}</p>
-                                            </div>
-                                            <div className="location flex items-center ml-4">
-                                                <LocationOnIcon className='text-vBrightOrange' />
-                                                <p className="pl-2">{nextEvent.location}</p>
-                                            </div>
+                                    <div className="relative bg-softOrange p-5 flex items-start justify-start text-left">
+                                        {/* XYZ attached to the event */}
+                                        <div className="bg-vBrightOrange px-8 py-2 rounded-full absolute right-[-6rem] top-1/2 transform -translate-y-1/2 -rotate-90 text-md font-bold text-white">
+                                            {nextEvent.date}
                                         </div>
-                                        <h3 className="font-bold mb-4 text-2xl">{nextEvent.title}</h3>
-                                        <button className='border-none bg-transparent cursor-pointer'>View More <ArrowForwardIcon className='text-vBrightOrange' /></button>
+
+                                        {/* Event Data */}
+                                        <div>
+                                            <div className="location__and__time flex mb-4 pt-5 text-xs">
+                                                <div className="time flex items-center">
+                                                    <AccessTimeIcon className='text-vBrightOrange' />
+                                                    <p className="pl-2">{nextEvent.time}</p>
+                                                </div>
+                                                <div className="location flex items-center ml-4">
+                                                    <LocationOnIcon className='text-vBrightOrange' />
+                                                    <p className="pl-2">{nextEvent.location}</p>
+                                                </div>
+                                            </div>
+                                            <h3 className="font-bold mb-4 text-2xl">{nextEvent.title}</h3>
+                                            <button className='border-none bg-transparent cursor-pointer'>
+                                            View More <ArrowForwardIcon className='text-vBrightOrange' />
+                                            </button>
+                                        </div>
                                     </div>
                                 ) : (
                                     <div>No upcoming events</div>  // Fallback if no event is found
@@ -95,11 +107,11 @@ function EventSection() {
 
                             {/* Only render event details if nextEvent exists */}
                             {/* Div6: Second column, second row */}
-                            <div className="col-start-2 col-end-3 row-start-2 row-end-3 bg-gray-500 flex items-start justify-start text-xs">
+                            <div className="col-start-2 col-end-3 row-start-2 row-end-auto bg-gray-500 flex items-start justify-start">
                                 <div className="bg-softGreen w-full h-full flex items-start justify-start text-left p-5">
                                     {nextNonDuplicateEvent ? (
                                         <div>
-                                            <div className="location__and__time flex mb-4 pt-5">
+                                            <div className="location__and__time flex mb-4 pt-5 text-xs">
                                                 <div className="time flex items-center">
                                                     <AccessTimeIcon className='text-vDarkGreen' />
                                                     <p className="pl-2">{nextNonDuplicateEvent.time}</p>
