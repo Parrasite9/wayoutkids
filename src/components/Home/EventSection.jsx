@@ -24,7 +24,7 @@ function EventSection() {
 
                     {/* TITLE  */}
                     <div className="title__and__linebreak">
-                        <h3 className='text-vBrightOrange'>Upcoming Events</h3>
+                        <h3 className='text-vBrightOrange mt-4'>Upcoming Events</h3>
                         {/* INSERT LINE BREAK  */}
                         <hr class="w-1/6 border-t-2 border-gray-400 my-4 text-left border-vDarkGreen" />
                     </div>
@@ -33,7 +33,7 @@ function EventSection() {
                     {/* TEXT  */}
                     <div className="flex flex-col justify-between
                                     md:pr-8">
-                        <h2 className='text-4xl font-bold mt-8'>Ready To Join Our Latest Upcoming <span className='text-vBrightOrange'>Events?</span></h2>
+                        <h2 className='text-4xl font-bold mt-2 md:mt-8'>Ready To Join Our Latest Upcoming <span className='text-vBrightOrange'>Events?</span></h2>
                         <p className='text-xl mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id beatae possimus alias architecto eaque numquam nemo dolorem tempore eum unde, quia tempora corporis quis repudiandae.</p>
                         <button className='flex justify-center bg-vBrightOrange text-white px-4 py-3 mb-8 rounded-3xl mt-8 w-2/3'>Discover More <ArrowForwardIcon className='text-white ml-2' /></button>
                     </div>  
@@ -53,11 +53,11 @@ function EventSection() {
                                     <div className="location__and__time flex mb-4 pt-5 text-xs">
                                         <div className="time flex items-center">
                                             <AccessTimeIcon className='text-vBrightOrange' />
-                                            <p className="pl-2">{nextEvent.time}</p>
+                                            <p className="pl-2 text-sm">{nextEvent.time}</p>
                                         </div>
                                         <div className="location flex items-center ml-4">
                                             <LocationOnIcon className='text-vBrightOrange' />
-                                            <p className="pl-2">{nextEvent.location}</p>
+                                            <p className="pl-2 text-sm">{nextEvent.location}</p>
                                         </div>
                                     </div>
                                     <h3 className="font-bold mb-4 text-2xl">{nextEvent.title}</h3>
@@ -95,11 +95,11 @@ function EventSection() {
                                     <div className="location__and__time flex mb-4 pt-5 text-xs">
                                         <div className="time flex items-center">
                                             <AccessTimeIcon className='text-vDarkGreen' />
-                                            <p className="pl-2">{nextNonDuplicateEvent.time}</p>
+                                            <p className="pl-2 text-sm">{nextNonDuplicateEvent.time}</p>
                                         </div>
                                         <div className="location flex items-center ml-4">
                                             <LocationOnIcon className='text-vDarkGreen' />
-                                            <p className="pl-2">{nextNonDuplicateEvent.location}</p>
+                                            <p className="pl-2 text-sm">{nextNonDuplicateEvent.location}</p>
                                         </div>
                                     </div>
                                     <h3 className="font-bold mb-4 text-2xl">{nextNonDuplicateEvent.title}</h3>

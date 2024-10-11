@@ -44,7 +44,7 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
         serif: ['Lora', 'serif'],
-        body: ['Roboto', 'sans-serif'], // Define the 'font-body' custom class
+        body: ['Roboto', 'sans-serif'], 
       },
     },
   },
