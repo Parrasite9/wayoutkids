@@ -1,6 +1,6 @@
 // src/pages/Home.jsx
 import React from 'react';
-import { Hero, About, Education, Products, SupportMission, EventSection } from '../components/Home';
+import { Hero, About, Education, Products, SupportMission, EventSection, ChooseUs } from '../components/Home';
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Hero />
       <EventSection />
       <About />
+      <ChooseUs />
       {/* <Education /> */}
       {/* <Products /> */}
       {/* <SupportMission /> */}
