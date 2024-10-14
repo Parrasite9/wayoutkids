@@ -27,7 +27,7 @@ const WhyUsText = () => {
             </div>
         </div>
         <button className='flex justify-center bg-vBrightOrange text-white px-4 py-3 mb-8 rounded-3xl mt-8 w-2/3 lg:w-2/5'>
-            Discover More 
+            Join Our Community 
             <ArrowForwardIcon className='text-white ml-2' />
         </button>
         </>
