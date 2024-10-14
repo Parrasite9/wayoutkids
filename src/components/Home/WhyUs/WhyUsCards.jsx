@@ -42,7 +42,7 @@ const WhyUsCards = () => {
             <>
                 <div className="outer-parent">
                     {/* New Grid for Tablet and Above */}
-                    <div className="parent grid grid-cols-1 grid-rows-4 gap-0 text-center justify-center mt-4 md:grid-cols-2 md:grid-rows-1">
+                    <div className="parent grid grid-cols-1 grid-rows-4 gap-0 text-center justify-center mt-4 md:grid-cols-2 md:grid-rows-1 lg:p-8">
                         {/* Inner Content Grid */}
                         <div className="child-grid grid grid-cols-1 grid-rows-4 gap-0 text-center justify-center mt-4 md:grid-cols-2 md:grid-rows-2">
                             {chooseUsData.map((item, index) => (
