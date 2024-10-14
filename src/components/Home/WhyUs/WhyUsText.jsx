@@ -1,8 +1,10 @@
 import React from 'react';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const WhyUsText = () => {
     return (
-        <div className="grid grid-cols-3 grid-rows-2 gap-0 pb-8 md:gap-y-8 ">
+        <>
+        <div className="grid grid-cols-3 grid-rows-2 gap-0 md:gap-y-8 ">
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 div1 flex justify-center items-start">
                 {/* Content for Div 1 */}
                 <img className='w-2/3 md:w-1/3 lg:w-1/2' src="/images/icons/shield.png" alt="shield" />
@@ -24,6 +26,11 @@ const WhyUsText = () => {
                 <p className='lg:text-left'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nam dicta cupiditate impedit harum aliquam.</p>
             </div>
         </div>
+        <button className='flex justify-center bg-vBrightOrange text-white px-4 py-3 mb-8 rounded-3xl mt-8 w-2/3 lg:w-2/5'>
+            Discover More 
+            <ArrowForwardIcon className='text-white ml-2' />
+        </button>
+        </>
     );
 };
 
