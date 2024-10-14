@@ -26,7 +26,7 @@ function EventSection() {
                     <div className="title__and__linebreak">
                         <h3 className='text-vBrightOrange mt-4'>Upcoming Events</h3>
                         {/* INSERT LINE BREAK  */}
-                        <hr class="w-1/6 border-t-2 border-gray-400 my-4 text-left border-vDarkGreen" />
+                        <hr className="w-1/6 border-t-2 border-gray-400 my-4 text-left border-vDarkGreen" />
                     </div>
 
 
@@ -122,14 +122,14 @@ function EventSection() {
                 </div>
             ) : (
                 // DESKTOP VIEW 
-                <div class="grid grid-cols-2 auto-rows-auto gap-4 p-8">
+                <div className="grid grid-cols-2 auto-rows-auto gap-4 p-8">
                     {/* <!-- Div 1 --> */}
-                    <div class="col-start-1 col-end-2 row-start-1 row-end-auto">
+                    <div className="col-start-1 col-end-2 row-start-1 row-end-auto">
                         {/* <!-- Content for Div1 --> */}
                         <div className="title__and__linebreak">
                             <h3 className='text-vBrightOrange'>Upcoming Events</h3>
                             {/* INSERT LINE BREAK  */}
-                            <hr class="w-1/6 border-t-2 border-gray-400 my-4 text-left border-vDarkGreen" />
+                            <hr className="w-1/6 border-t-2 border-gray-400 my-4 text-left border-vDarkGreen" />
 
                         </div>
                         
@@ -141,7 +141,7 @@ function EventSection() {
                     </div>
 
                     {/* <!-- Div 2 --> */}
-                    <div class="col-start-2 col-end-3 row-start-1 row-end-2 rounded-l-xl">
+                    <div className="col-start-2 col-end-3 row-start-1 row-end-2 rounded-l-xl">
                         {/* <!-- Content for Div2 --> */}
 
                         {/* THIS IS THE PARENT DIV FOR THE EVENTS SECTION CONTAINER  */}

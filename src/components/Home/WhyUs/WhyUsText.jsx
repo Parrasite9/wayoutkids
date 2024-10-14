@@ -5,7 +5,8 @@ const WhyUsText = () => {
         <div className="grid grid-cols-3 grid-rows-2 gap-0 pb-8 md:gap-y-8 ">
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 div1 flex justify-center items-start">
                 {/* Content for Div 1 */}
-                <img className='w-2/3 md:w-1/3 lg:w-1/2' src="/images/icons/shield.svg" alt="shield" />
+                <img className='w-2/3 md:w-1/3 lg:w-1/2' src="/images/icons/shield.png" alt="shield" />
+            
             </div>
             <div className="col-start-2 col-end-4 row-start-1 row-end-2 div2">
                 {/* Content for Div 2 */}
@@ -14,7 +15,8 @@ const WhyUsText = () => {
             </div>
             <div className="col-start-1 col-end-2 row-start-2 row-end-3 div3 flex justify-center items-start">
                 {/* Content for Div 3 */}
-                <img className='w-1/2 md:w-1/4 lg:w-1/3' src="/images/icons/support.svg" alt="support" />
+                <img className='w-1/2 md:w-1/4 lg:w-1/3' src="/images/icons/support.png" alt="support" />
+
             </div>
             <div className="col-start-2 col-end-4 row-start-2 row-end-3 div4">
                 {/* Content for Div 4 */}
