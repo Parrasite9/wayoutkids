@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div className='bg-myWhite text-myBlack px-4 lg:px-1'>
       <Hero />
+      <ChooseUs />
       <EventSection />
       <About />
-      <ChooseUs />
       {/* <Education /> */}
       {/* <Products /> */}
       {/* <SupportMission /> */}
