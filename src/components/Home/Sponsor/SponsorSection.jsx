@@ -1,12 +1,13 @@
 import React from 'react';
 import Sponsor from './Sponsor'; // Import the Sponsor component
 import useIsMobile from '../../hooks/ScreenSizeUpdate'; // Import the hook for detecting mobile screens
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const SponsorSection = () => {
   const isMobile = useIsMobile(); // Detect if the screen is mobile
 
   return (
-    <div>
+    <div className='bg-custom-gradient'>
       {/* Conditional rendering based on whether the screen is mobile */}
       {isMobile ? (
         <div>
@@ -31,6 +32,13 @@ const SponsorSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula felis sed nulla tempor
               venenatis. Donec quis augue at lorem tincidunt commodo. Nulla facilisi.
             </p>
+            <div className="about__button justify-center items-center">
+                <button className='bg-blue-500 text-white mt-5 px-4 py-2 rounded-md flex justify-center w-full
+                                    md:w-2/5 md:py-3'>
+                    <span className='leading-none'>Learn More</span> 
+                    <ArrowForwardIosIcon fontSize='small'/>
+                </button>
+            </div>
           </div>
 
           {/* Second column with the Sponsor component */}
