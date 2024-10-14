@@ -10,3 +10,7 @@ export { default as EventSection } from './EventSection';
 export { default as WhyUsCards } from './WhyUs/WhyUsCards';
 export { default as ChooseUs } from './WhyUs/ChooseUs';
 export { default as WhyUsText } from './WhyUs/WhyUsText';
+
+// src/components/Sponsor
+export { default as Sponsor } from './Sponsor/Sponsor';
+export { default as SponsorSection } from './Sponsor/SponsorSection';
