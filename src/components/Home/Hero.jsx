@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useIsMobile from '../hooks/ScreenSizeUpdate';
 
 // THIS IMPORT PULLS SLIDES FROM THE REACT SWIPER FILE 
@@ -8,9 +8,16 @@ import ReactSwiper, { slides } from '../Packages/ReactSwiper';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+import VideoModal from './VideoModal';
+
 function Hero() {
 
   const isMobile = useIsMobile();
+  const [isModalOpen, setModalOpen] = useState(false); // State to manage the modal
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
 
   return (
     <div className='Hero__Container lg:px-8'>
@@ -91,7 +98,11 @@ function Hero() {
                     <button className="bg-blue-500 text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
                         Make An Impact
                     </button>
-                    <button className="flex justify-center bg-darkGreen text-white px-4 py-2 rounded-md w-2/5 xl:py-3">
+                    {/* <button className="flex justify-center bg-darkGreen text-white px-4 py-2 rounded-md w-2/5 xl:py-3"> */}
+                    <button
+                onClick={openModal}  
+                className="flex justify-center bg-darkGreen text-white px-4 py-2 rounded-md w-2/5 xl:py-3"
+              >
                         <PlayCircleOutlineIcon />
                         <span className="pl-2">Watch Video</span>
                     </button>
@@ -99,6 +110,9 @@ function Hero() {
             </div>
         </>
       )}
+
+      {/* Video Modal */}
+      <VideoModal isOpen={isModalOpen} onClose={closeModal} />
 
     </div>
   )
