@@ -7,9 +7,9 @@ const Home = () => {
     <div className='bg-myWhite text-myBlack px-4 lg:px-1'>
       <Hero />
       <ChooseUs />
+      <Testimony />
       <EventSection />
       <About />
-      <Testimony />
       {/* <Education /> */}
       {/* <Products /> */}
       {/* <SupportMission /> */}
