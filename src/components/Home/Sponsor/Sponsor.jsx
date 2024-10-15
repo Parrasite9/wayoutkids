@@ -1,5 +1,6 @@
 import React from 'react';
 import { sponsorData } from '../../Utils/SponsorUtil'; // Importing sponsor data from utils
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForward';
 
 const Sponsor = () => {
   
@@ -43,9 +44,17 @@ const Sponsor = () => {
   };
 
   return (
-    <div>
-      <h2 className="text-xl font-bold mb-4 lg:hidden">Meet Our Sponsors</h2>
-      <SponsorGrid sponsors={sponsorData} /> {/* Passing the sponsor data */}
+    <div className='p-4'>
+        <h3 className='mt-10 text-vDeepBlue font-semibold'>We Love Our Sponsors</h3>
+        <h2 className='font-bold text-darkGreen text-2xl mb-8'>Creating A Community That Makes A Difference</h2>
+        <p className='mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui consequuntur saepe cumque illo fugit asperiores ipsam dolore! Culpa quidem quibusdam placeat hic, similique impedit adipisci illum laboriosam quas fugit maiores.</p>
+        <button className='bg-blue-500 text-white mt-5 px-4 py-2 rounded-md flex justify-center w-full mb-8
+                            md:w-2/5 md:py-3'>
+            <span className='leading-none'>Become A Sponsor</span> 
+            <ArrowForwardIosIcon fontSize='small'/>
+        </button>
+
+        <SponsorGrid sponsors={sponsorData} /> {/* Passing the sponsor data */}
     </div>
   );
 };
