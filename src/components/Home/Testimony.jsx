@@ -12,7 +12,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function Testimony() {
   return (
-    <div className='testimony__container bg-custom-gradient overflow-hidden'>
+    <div className='testimony__container bg-custom-gradient overflow-hidden pt-12 pb-4'>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -28,147 +28,157 @@ export default function Testimony() {
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
+        breakpoints={{
+            // when the window is >= 768px (medium devices)
+            768: {
+              slidesPerView: 2, // Show 2 slides per view for medium devices
+            },
+            // when the window is >= 1024px (large devices)
+            1024: {
+              slidesPerView: 3, // Show 3 slides per view for large devices
+            },
+          }}
       >
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>From Aspiring To Acheivment</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>From Aspiring To Acheivment</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/1.png" />
+                <img className='lg:w-3/4' src="/images/testimony/1.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>John Doe</h3>
-                <p className='italic'>/ Aspiring WayOutKids Sponsor</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>John Doe</h3>
+                <p className='italic xl:text-md'>/ Aspiring WayOutKids Sponsor</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>A Journey of a Thousand Miles</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>A Journey of a Thousand Miles</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/2.png" />
+                <img className='lg:w-3/4' src="/images/testimony/2.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Jane Doe</h3>
-                <p className='italic'>/ Co Founder of JD Co.</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Jane Doe</h3>
+                <p className='italic xl:text-md'>/ Co Founder of JD Co.</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>Making A Lasting Impact</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Making A Lasting Impact</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/3.png" />
+                <img className='lg:w-3/4' src="/images/testimony/3.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Susy Sally</h3>
-                <p className='italic'>/ Assistant of the CEO</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Susy Sally</h3>
+                <p className='italic xl:text-md'>/ Assistant of the CEO</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>Empowered and Equipped</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Empowered and Equipped</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/4.png" />
+                <img className='lg:w-3/4' src="/images/testimony/4.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Peter Parker</h3>
-                <p className='italic'>/ Friendly Neighborhood Spider-Man</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Peter Parker</h3>
+                <p className='italic xl:text-md'>/ Friendly Neighborhood Spider-Man</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>Lifelong Learning Success</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Lifelong Learning Success</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/5.png" />
+                <img className='lg:w-3/4' src="/images/testimony/5.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Dr. Octavius</h3>
-                <p className='italic'>/ Professor of Science</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Dr. Octavius</h3>
+                <p className='italic xl:text-md'>/ Professor of Science</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>Inspiring Transformation</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Inspiring Transformation</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/6.png" />
+                <img className='lg:w-3/4' src="/images/testimony/6.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Judy Moody</h3>
-                <p className='italic'>/ Student of St. Jude's</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Judy Moody</h3>
+                <p className='italic xl:text-md'>/ Student of St. Jude's</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>Building Confidence, Changing Lives</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Building Confidence, Changing Lives</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/7.png" />
+                <img className='lg:w-3/4' src="/images/testimony/7.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Jack Sparrow</h3>
-                <p className='italic'>/ Captain of the Black Pearl</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Jack Sparrow</h3>
+                <p className='italic xl:text-md'>/ Captain of the Black Pearl</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>Creating Pathways to Success</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Creating Pathways to Success</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/8.png" />
+                <img className='lg:w-3/4' src="/images/testimony/8.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Cutie Patootie</h3>
-                <p className='italic'>/ Cute Sponsors Attendee</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Cutie Patootie</h3>
+                <p className='italic xl:text-md'>/ Cute Sponsors Attendee</p>
             </div>
           </div>
         
         </SwiperSlide>
         <SwiperSlide className='border border-red-500 mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold'>A Community That Cares</h2>
-                <p className='text-myBlack font-semiBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
+                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>A Community That Cares</h2>
+                <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
             <div className="image__container w-1/5">
-                <img className='w-full h-auto rounded-full object-cover' src="/images/testimony/9.png" />
+                <img className='lg:w-3/4' src="/images/testimony/9.png" />
             </div>
             <div className="name__container ml-8">
-                <h3 className='text-darkGreen font-bold'>Mac Donald</h3>
-                <p className='italic'>/ Owner of Farmland</p>
+                <h3 className='text-darkGreen font-bold xl:text-lg'>Mac Donald</h3>
+                <p className='italic xl:text-md'>/ Owner of Farmland</p>
             </div>
           </div>
         
