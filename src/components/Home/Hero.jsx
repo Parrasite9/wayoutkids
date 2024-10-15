@@ -73,7 +73,7 @@ function Hero() {
                     ];
                 
                 return (
-                    <div key={index} className={`${divClasses[index]} relative cursor-pointer `}>
+                    <div key={index} className={`${divClasses[index]} relative cursor-pointer transition-transform duration-300 transform hover:-translate-y-2 `}>
                         <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover rounded-3xl" />
                         <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-40 py-5 rounded-3xl">
                             <h3 className="text-lg font-bold pl-5">{slide.title}</h3>
