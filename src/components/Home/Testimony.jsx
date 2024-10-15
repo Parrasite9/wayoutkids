@@ -12,7 +12,11 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 export default function Testimony() {
   return (
-    <div className='testimony__container bg-custom-gradient overflow-hidden pt-12 pb-4'>
+    <div className='testimony__container bg-custom-gradient overflow-hidden pt-4 pb-4'>
+        <div className="testimony__header pb-4 px-4 md:text-center">
+            <h3 className='mt-10 text-vDeepBlue font-semibold'>Inspiring Stories</h3>
+            <h2 className='font-bold text-darkGreen text-2xl mb-4'>Discover The Stories Behind Our Missions Success</h2>
+        </div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -47,7 +51,7 @@ export default function Testimony() {
       >
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>From Aspiring To Acheivment</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>From Aspiring To Acheivment</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -63,7 +67,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>A Journey of a Thousand Miles</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>A Journey of a Thousand Miles</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -79,7 +83,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Making A Lasting Impact</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>Making A Lasting Impact</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -95,7 +99,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Empowered and Equipped</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>Empowered and Equipped</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -111,7 +115,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Lifelong Learning Success</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>Lifelong Learning Success</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -127,7 +131,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Inspiring Transformation</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>Inspiring Transformation</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -143,7 +147,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Building Confidence, Changing Lives</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>Building Confidence, Changing Lives</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -159,7 +163,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Creating Pathways to Success</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>Creating Pathways to Success</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
@@ -175,7 +179,7 @@ export default function Testimony() {
         </SwiperSlide>
         <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
-                <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>A Community That Cares</h2>
+                <h2 className='mt-4 text-vDeepBlue font-extrabold xl:text-lg'>A Community That Cares</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
             </div>
           <div className="image__and__name flex p-4">
