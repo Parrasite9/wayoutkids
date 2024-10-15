@@ -8,7 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 export default function Testimony() {
   return (
@@ -25,6 +25,12 @@ export default function Testimony() {
           modifier: 1,
           slideShadows: true,
         }}
+        loop={true}
+        // Autoplay and Pagination settings
+        autoplay={{
+            delay: 3000,                 // Delay between slides (in milliseconds)
+            disableOnInteraction: false, // Do not stop autoplay when user interacts
+        }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
@@ -39,7 +45,7 @@ export default function Testimony() {
             },
           }}
       >
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>From Aspiring To Acheivment</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -55,7 +61,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>A Journey of a Thousand Miles</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -71,7 +77,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Making A Lasting Impact</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -87,7 +93,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Empowered and Equipped</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -103,7 +109,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Lifelong Learning Success</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -119,7 +125,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Inspiring Transformation</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -135,7 +141,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Building Confidence, Changing Lives</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -151,7 +157,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>Creating Pathways to Success</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
@@ -167,7 +173,7 @@ export default function Testimony() {
           </div>
         
         </SwiperSlide>
-        <SwiperSlide className='border border-red-500 mb-8'>
+        <SwiperSlide className='mb-8'>
             <div className="testimony__text__container px-4">
                 <h2 className='mt-8 text-vDeepBlue font-extrabold xl:text-lg'>A Community That Cares</h2>
                 <p className='text-myBlack font-semiBold xl:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias odit, cumque minus maxime possimus!</p>
