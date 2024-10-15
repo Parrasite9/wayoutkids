@@ -46,7 +46,7 @@ function Footer() {
   const programsLink = navLinks.find((link) => link.name === 'Programs');
 
   return (
-    <footer className="bg-darkGreen text-white py-12 mt-16">
+    <footer className="bg-darkGreen text-white py-16">
       <div className="container mx-auto px-6">
         {isMobile ? (
           /* Mobile Layout */
