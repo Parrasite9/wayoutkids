@@ -35,8 +35,8 @@ export default function Testimony() {
             delay: 3000,                 // Delay between slides (in milliseconds)
             disableOnInteraction: false, // Do not stop autoplay when user interacts
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        pagination={{clickable: true}}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
         breakpoints={{
             // when the window is >= 768px (medium devices)
