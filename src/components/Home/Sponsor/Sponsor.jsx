@@ -45,14 +45,14 @@ const Sponsor = () => {
 
   return (
     <div className='p-4'>
-        <h3 className='mt-10 text-vDeepBlue font-semibold'>We Love Our Sponsors</h3>
+        {/* <h3 className='mt-10 text-vDeepBlue font-semibold'>We Love Our Sponsors</h3>
         <h2 className='font-bold text-darkGreen text-2xl mb-8'>Creating A Community That Makes A Difference</h2>
         <p className='mb-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui consequuntur saepe cumque illo fugit asperiores ipsam dolore! Culpa quidem quibusdam placeat hic, similique impedit adipisci illum laboriosam quas fugit maiores.</p>
         <button className='bg-blue-500 text-white mt-5 px-4 py-2 rounded-md flex justify-center w-full mb-8
                             md:w-2/5 md:py-3'>
             <span className='leading-none'>Become A Sponsor</span> 
             <ArrowForwardIosIcon fontSize='small'/>
-        </button>
+        </button> */}
 
         <SponsorGrid sponsors={sponsorData} /> {/* Passing the sponsor data */}
     </div>
