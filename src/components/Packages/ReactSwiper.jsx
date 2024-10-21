@@ -13,13 +13,13 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // Define your slides data
 export const slides = [
-  { src: 'images/image1.jpg', alt: 'Slide 1', title: 'Lorum Ipsum1', cta: 'Learn More' },
-  { src: 'images/image2.jpeg', alt: 'Slide 2', title: 'Lorum Ipsum2', cta: 'Become a Vendor' },
-  { src: 'images/image3.jpg', alt: 'Slide 3', title: 'Lorum Ipsum3', cta: 'Help Our Mission' },
-  { src: 'images/image1.jpg', alt: 'Slide 4', title: 'Lorum Ipsum4', cta: 'Learn More' },
-  { src: 'images/image2.jpeg', alt: 'Slide 5', title: 'Lorum Ipsum5', cta: 'Become a Vendor' },
-  { src: 'images/image3.jpg', alt: 'Slide 6', title: 'Lorum Ipsum6', cta: 'Help Our Mission' },
-  { src: 'images/image1.jpg', alt: 'Slide 7', title: 'Lorum Ipsum7', cta: 'Learn More' },
+  { src: 'images/volunteer.jpg', alt: 'Slide 1', title: 'Vendor', cta: 'Become A Vendor' },
+  { src: '', alt: '', title: 'Let Them Be Heard', cta: 'Help Our Mission' },
+  { src: 'images/education.jpg', alt: 'Slide 3', title: 'Education', cta: 'Let\'s learn something' },
+  { src: 'images/image3.jpg', alt: 'Slide 4', title: 'Join Our Loving Community', cta: 'Be Extraordinary' },
+  { src: 'images/events.jpg', alt: 'Slide 5', title: 'Events', cta: 'Get Excited' },
+  { src: 'images/hands.jpg', alt: 'Slide 6', title: 'Volunteer', cta: 'Make A Difference' },
+  { src: '', alt: '', title: 'Your Home For Help', cta: 'Learn More' },
   { src: 'images/image2.jpeg', alt: 'Slide 8', title: 'Lorum Ipsum8', cta: 'Become a Vendor' },
   { src: 'images/image3.jpg', alt: 'Slide 9', title: 'Lorum Ipsum9', cta: 'Help Our Mission' },
 ];

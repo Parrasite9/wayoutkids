@@ -78,20 +78,49 @@ function Hero() {
                         "col-start-9 col-end-11 row-start-1 row-end-4",
                         "col-start-9 col-end-11 row-start-4 row-end-6",
                     ];
+
+                // Check if it's the fifth slide (index 4)
+                const imageClasses = index === 4 ? "transform scale-x-[-1]" : "";
+
+                // Conditional background colors for slides without an image
+                const backgroundColor = index === 1 ? 'bg-yellow-500' : index === 6 ? 'bg-orange-500' : '';
+
+                // Centering styles for text-only and image-based slides
+                const centeredText = 'flex flex-col items-center justify-center text-center';
+
                 
                 return (
-                    <div key={index} className={`${divClasses[index]} relative cursor-pointer transition-transform duration-300 transform hover:-translate-y-2 `}>
-                        <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover rounded-3xl" />
-                        <div className="absolute inset-0 flex flex-col justify-between text-white bg-black bg-opacity-40 py-5 rounded-3xl">
-                            <h3 className="text-lg font-bold pl-5">{slide.title}</h3>
-                            <div className="flex items-center justify-end pr-5">
-                            <p className="pr-2">{slide.cta}</p>
-                            <ArrowForwardIosIcon fontSize="small" />
-                            </div>
-                        </div>
-                    </div>
-                );
-                })}
+                  <div key={index} className={`${divClasses[index]} relative cursor-pointer transition-transform duration-300 transform hover:-translate-y-2`}>
+                      {/* Check if the slide has an image */}
+                      {slide.src ? (
+                          <img src={slide.src} alt={slide.alt} className={`w-full h-full object-cover rounded-3xl ${imageClasses}`} />
+                      ) : (
+                          // No image, render background with centered text
+                          <div className={`w-full h-full rounded-3xl ${backgroundColor} ${centeredText}`}>
+                              <div className="text-white">
+                                  <h3 className="text-lg font-bold lg:text-3xl">{slide.title}</h3>
+                                  {slide.cta && (
+                                      <div className="mt-2">
+                                          <button className="bg-blue-500 text-white px-4 py-2 rounded-md">{slide.cta}</button>
+                                      </div>
+                                  )}
+                              </div>
+                          </div>
+                      )}
+          
+                      {/* If the slide has an image, render the text overlay, and center it for slide 4 */}
+                      {slide.src && (
+                          <div className={`absolute inset-0 ${index === 3 ? centeredText : 'flex flex-col justify-between'} text-white bg-black bg-opacity-40 py-5 rounded-3xl`}>
+                              <h3 className="text-lg font-bold pl-5 lg:text-3xl">{slide.title}</h3>
+                              <div className={`${index === 3 ? 'mt-4 flex items-center justify-center' : 'flex items-center justify-end pr-5'}`}>
+                              {slide.cta && <p className="pr-2 text-xl">{slide.cta}</p>}
+                                  {slide.cta && <ArrowForwardIosIcon fontSize="small" />}
+                              </div>
+                          </div>
+                      )}
+                  </div>
+              );
+              })}
 
                 {/* Div9 (Buttons) */}
                 <div className="col-start-3 col-end-9 row-start-1 row-end-3 flex items-center justify-around">
